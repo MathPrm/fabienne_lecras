@@ -8,5 +8,7 @@
 <body>
     <h1>Toto</h1>
     <p>c'est chaimaa </p>
+    <p>re tooto</p>
+    <p>re re toto</p>
 </body>
 </html>
