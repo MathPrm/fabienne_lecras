@@ -1,3 +1,252 @@
 /*
 Theme Name: fabienne_lecras_tanguy
 */
+
+
+/* En-tête */
+header {
+     /* Couleur sombre */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 2px 100px; 
+    background-color: #1D1E1D;
+}
+
+/* Styles du logo dans le header */
+.logo img {
+    max-height: 40px; 
+    width: auto;
+    margin-right: 80px; 
+}
+
+/* menu*/
+header nav a {
+    color: #ead296;
+    margin: 0 24px;
+    text-decoration: none;
+    font-family: 'Baskerville', serif;
+}
+
+/* Boutons */
+.btn, .btn-contact {
+    display: inline-block;
+    color: #ead296;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    align-items: center;
+    border: 1px solid #ead296;
+}
+
+
+
+
+
+
+/* styles  pour le header */
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li a:hover {
+    color: #f1c40f;
+}
+
+
+.hero {
+    background-color: #0a0a0ae5; 
+    padding: 100px 20px; 
+    text-align: center; 
+}
+
+
+
+
+
+
+/* Deux colonnes ( image ) */
+.two-columns {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+    
+}
+ 
+
+.two-columns img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.two-columns h2 {
+    font-family: 'Gwendolyn', cursive; 
+    font-size: 20px; 
+    font-weight: 400; 
+    color: #1D1E1D; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+
+
+/* Section À Propos */
+.about {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background-color: #0F2225;
+    gap: 0px; /* Espace entre le texte et l'image */
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 5px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+   
+
+
+.about-text h2 {
+    font-family: 'Gwendolyn', cursive; 
+    font-size: 36px; 
+    color: #ead296; 
+    margin-top: 10px auto; 
+    position: relative; 
+    text-align: center; 
+    margin-bottom: 20px; 
+
+}
+.about-text h2::after {
+    content: ""; 
+    display: block;
+    width: 400px; 
+    height: 1px; 
+    background-color: #ead296; 
+    margin: 20px auto 0; 
+    text-align: center;  
+}
+
+
+.about-text p {
+    font-size: 16px; 
+    line-height: 1.8; 
+    color: #F1EFE7; 
+    margin: 20px 0; 
+    text-align: center;
+    font-family: 'poppins', serif;
+}
+
+
+.about-text .btn {
+    display: inline-block;
+    background-color: #5f0a0a;
+    color: #EAD296;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-family: 'Baskerville', serif;
+    margin-top: 35px;
+   
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 50%;
+    padding: 60px;
+    margin: 0; 
+    margin-right: 200px;  
+    
+
+}
+
+
+
+/* Styles du footer */
+footer {
+    background-color: #0C0C0C; 
+    color: #FFFFFF; 
+    padding: 40px 20px; 
+    font-family: 'Baskerville', serif; 
+    text-align: center;
+}
+
+/* Organisation du contenu dans le footer */
+footer .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styles de la navigation */
+footer .footer-navigation ul,
+footer .footer-mentions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .footer-navigation ul li,
+footer .footer-mentions ul li {
+    margin: 0;
+}
+
+footer .footer-navigation a,
+footer .footer-mentions a {
+    color: #FFFFFF; 
+    text-decoration: none; 
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+footer .footer-navigation a:hover,
+footer .footer-mentions a:hover {
+    color: #C9A664; 
+}
+
+/* Logo du footer */
+footer .footer-logo img {
+    max-height: 80px; /* Hauteur maximale du logo */
+    width: auto;
+    margin: 0 20px; /* Espacement autour du logo */
+}
+
+/* Alignement et espacement des sections */
+footer .footer-navigation,
+footer .footer-logo,
+footer .footer-mentions {
+    flex: 1;
+    text-align: center;
+}
+
+/* Ajustements pour mobile */
+@media (max-width: 768px) {
+    footer .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .footer-navigation ul,
+    footer .footer-mentions ul {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
