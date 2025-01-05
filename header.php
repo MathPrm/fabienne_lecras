@@ -17,10 +17,10 @@
                </div>
                <nav>
                     <ul  class="menu">
-                        <a href="/">RESTAURATION</a>
+                        <a href="/">ACCUEIL</a>
+                        <a href="/">RESTAURATIONS</a>
                         <a href="/">CREATIONS</a>
-                        <a href="/">A PROPOS</a>
-                        <a href="#contact" class="btn-contact">Contact</a> 
+                        <a href="/">CONTACT</a>   
                     </ul>       
                </nav>
     </header>

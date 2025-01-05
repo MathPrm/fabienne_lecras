@@ -20,48 +20,57 @@ header {
     margin-right: 80px; 
 }
 
+
+
 /* menu*/
 header nav a {
     color: #ead296;
     margin: 0 24px;
     text-decoration: none;
-    font-family: 'Baskerville', serif;
 }
-
-/* Boutons */
-.btn, .btn-contact {
-    display: inline-block;
-    color: #ead296;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 25px;
-    font-size: 1rem;
-    align-items: center;
-    border: 1px solid #ead296;
-}
-
-
-
-
-
-
-/* styles  pour le header */
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li a:hover {
-    color: #f1c40f;
-}
-
 
 .hero {
     background-color: #0a0a0ae5; 
     padding: 100px 20px; 
     text-align: center; 
+    color: #D8AA7A;
 }
 
+.hero .h1{
+    font-family: 'Baskerville';
+    font-size: 35px; 
+    font-weight: normal; 
+}
+.hero .h2{
+    font-family: 'Baskerville';
+    font-size: 17px; 
+    font-weight: normal; 
+
+}
+.hero .h3{
+    font-family: 'gwendolyn';
+    font-size: 20px; 
+    font-weight: normal; 
+
+}
+
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(180deg, #CE372D, #0F2225);
+    color: #EAD296;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-family: 'Baskerville', serif;
+    margin-top: 35px;
+    border-radius: 20px;
+    border: 1px solid #EAD296; 
+    text-align: center;
+   
+}
+.btn:hover {
+    background-color: hsl(10, 91%, 14%); /* Change la couleur de fond au survol */
+}
 
 
 
@@ -75,19 +84,26 @@ header nav ul li a:hover {
     
 }
  
-
 .two-columns img {
-    max-width: 100%;
+    max-width: 90%;
     border-radius: 10px;
 }
 
 .two-columns h2 {
-    font-family: 'Gwendolyn', cursive; 
+    font-family: 'Gwendolyn'; 
     font-size: 20px; 
     font-weight: 400; 
     color: #1D1E1D; 
-    text-align: center; 
     margin-bottom: 20px; 
+}
+
+/* Centrer la section vidéo */
+#video {
+    display: flex; /* Utilise Flexbox */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    min-height: 100vh; /* Hauteur de la section = pleine hauteur de l'écran */
+   
 }
 
 
@@ -98,21 +114,18 @@ header nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px;
+    padding: 20px; 
     background-color: #0F2225;
-    gap: 0px; /* Espace entre le texte et l'image */
 }
 
 .about-text {
     flex: 1;
-    margin-right: 5px;  
+    margin-right: 1px;  
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; 
+    
 }
-   
-
 
 .about-text h2 {
     font-family: 'Gwendolyn', cursive; 
@@ -127,7 +140,7 @@ header nav ul li a:hover {
 .about-text h2::after {
     content: ""; 
     display: block;
-    width: 400px; 
+    width: 300px; 
     height: 1px; 
     background-color: #ead296; 
     margin: 20px auto 0; 
@@ -139,31 +152,17 @@ header nav ul li a:hover {
     font-size: 16px; 
     line-height: 1.8; 
     color: #F1EFE7; 
-    margin: 20px 0; 
-    text-align: center;
+    margin: 20px 0;  
     font-family: 'poppins', serif;
 }
 
 
-.about-text .btn {
-    display: inline-block;
-    background-color: #5f0a0a;
-    color: #EAD296;
-    padding: 15px 40px;
-    text-decoration: none;
-    font-family: 'Baskerville', serif;
-    margin-top: 35px;
-   
-}
-
 .about-image img {
     max-width: 100%;
     border-radius: 50%;
-    padding: 60px;
+    padding: 90px;
     margin: 0; 
     margin-right: 200px;  
-    
-
 }
 
 
@@ -231,18 +230,6 @@ footer .footer-mentions {
     text-align: center;
 }
 
-/* Ajustements pour mobile */
-@media (max-width: 768px) {
-    footer .footer-content {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    footer .footer-navigation ul,
-    footer .footer-mentions ul {
-        flex-direction: column;
-    }
-}
 
 
 
