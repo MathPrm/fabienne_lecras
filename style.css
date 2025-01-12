@@ -29,13 +29,44 @@ Theme Name: fabienne_lecras_tanguy
     font-style: italic;
   }
 
+  .gwendolyn-regular {
+    font-family: "Gwendolyn", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .gwendolyn-bold {
+    font-family: "Gwendolyn", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+/*
+    Colors
+*/
+
+:root {
+    --black:#1D1E1D;
+    --gold:#EAD296;
+    --blanc:#fbfbfb;
+    --blanc2:#FCFCFC;
+    --red: #8C1912;
+    --light-green: #264c4b;
+    --green: #013333;
+    --dark-green:#0F2225;
+    --dark-grey: #D3CCC4;
+    --light-grey: #F1EFE780;
+
+}
+
   
 /*
-  Navigation
+    Header
 */
 
 header {
-    background-color: #1D1E1D;
+    background-color: var(--black);
     height: 85px;
     width: 100%;
     padding: 0 100px 0 100px;
@@ -69,7 +100,7 @@ header {
 
 #menu-navigation li a {
     text-decoration: none;
-    color: #EAD296;
+    color: var(--gold);
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: normal;
@@ -82,4 +113,230 @@ header {
 
 .current-menu-item a {
     text-decoration: underline;
+}
+
+/*
+    Footer
+*/
+
+footer {
+    background-color: var(--black);
+    height: 250px;
+    width: 100%;
+    padding: 0 100px 0 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 80px;
+}
+
+#menu-navigation-footer {
+    list-style: none;
+}
+
+#nav_menu-2 { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 25px;;
+}
+
+#nav_menu-2 h2 {
+    display:none;
+}
+
+#nav_menu-2 li a {
+    text-decoration: none;
+    color: var(--gold);
+}
+
+#block-7 {
+    list-style: none;
+}
+
+#block-7 figure img{
+    height: 150px;
+    width: auto;
+}
+
+#menu-navigation-politiques  {
+    list-style: none;
+}
+
+
+#nav_menu-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height:25px;
+}
+
+
+#nav_menu-3 h2 {
+    display:none;
+}
+
+
+#nav_menu-3 li a {
+    text-decoration: none;
+    color: var(--gold);
+}
+
+/* Pages */
+
+h1 {
+    font-family: "Gwendolyn", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    color: var(--red);
+    margin: 50px 0 50px 0;
+    font-size: 4rem;
+    margin-left: 220px;
+}
+
+/* contact */
+
+#contact-container {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 80px;
+}
+
+/* form */
+
+.wpcf7 {
+    background-color: var(--dark-grey);
+    padding: 0px 30px 0px 30px;
+    border-radius: 30px;
+    gap: 10px;
+    width: 500px;
+    height: 502px;
+}
+
+.wpcf7-form-control::placeholder {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wpcf7-form-control {
+    background-color: var(--light-grey);
+    border: none;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.wpcf7-text  {
+    height: 50px;
+    padding: 15px;
+}
+
+.wpcf7-textarea {
+    padding: 15px;
+    height: 250px;
+}
+
+.wpcf7-submit {
+    background-color: var(--dark-green);
+    color: var(--gold);
+    height: 50px;
+    margin-top: 14px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wpcf7-submit:hover {
+    background-color: var(--green);
+}
+
+/* infos */
+
+#contact-infos-container {
+    background-color: var(--green);
+    height: 502px;
+    width: 500px;
+    border-radius: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: end;
+}
+
+.contact-infos {
+    text-transform: uppercase;
+    max-width: 340px;
+    color:var(--blanc2);
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8rem;
+}
+
+.contact-infos-container {
+    background-color: var(--dark-green);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    width: 90%;
+    margin-top: 15px;
+    border-radius: 12px;
+    height: 65px;
+}
+
+.contact-infos-container:hover {
+    background-color: var(--light-green);
+} 
+
+.contact-infos-icon {
+    height: 38px;
+    width: 38px;
+    background-color:var(--green);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-infos-icon-border {
+    background-image: linear-gradient( var(--gold), var(--dark-green) );
+    height: 40px;
+    width: 40px;
+    margin-right: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-infos-logo-container {
+    height: 50%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-infos-logo-container img {
+    max-width: 300px;
+}
+
+/* map */
+
+iframe {
+    width: 72%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    border-radius: 30px;
+    margin-bottom: 80px;
 }
