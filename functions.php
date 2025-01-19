@@ -19,6 +19,7 @@ add_action('after_setup_theme', 'montheme_supports');
 
 function add_theme_assets(){
     wp_enqueue_style( 'style', get_stylesheet_uri());
+    wp_enqueue_script('script-js',get_template_directory_uri(). '/app.js');
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_assets' );
 
