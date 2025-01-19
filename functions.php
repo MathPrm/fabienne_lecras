@@ -1,8 +1,4 @@
 <?php 
-
-function montheme_supports(){
-    add_theme_support('title-tag');
-}
 function montheme_register_assets () {
     wp_enqueue_style('google-fonts'); // Ajout de la police
     wp_register_style('google-fonts', 'https://fonts.googleapis.com/css?family=Gwendolyn', []); // Police Gwendolyn   
@@ -32,7 +28,6 @@ function fabienne_lecras_enqueue_styles() {
 add_action('wp_enqueue_scripts', 'fabienne_lecras_enqueue_styles');
 
 add_action('wp_enqueue_scripts', 'montheme_register_assets');
-add_action('after_setup_theme', 'montheme_supports');
 
 function montheme_supports () {
     add_theme_support('title-tag');
@@ -48,6 +43,7 @@ function montheme_supports () {
         'flex-height' => true,
         'flex-width' => true
     ));
+    add_theme_support('title-tag');
 }
 add_action('after_setup_theme', 'montheme_supports');
 
