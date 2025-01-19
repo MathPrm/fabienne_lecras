@@ -1,26 +1,12 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html lang="fr">
 <head>
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-
-    <title><?php bloginfo( 'name' ); ?></title>
-    <?php wp_head(); ?>
+    <link href='https://fonts.googleapis.com/css?family=Gwendolyn' rel='stylesheet'>
+         
+    <?php wp_head() ?>
 </head>
-<body <?php body_class(); ?>>
-    <header>
-               <div class="logo">
-                        <a href="/">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/logo_hea.jpg" alt="Logo Header">
-                        </a>
-               </div>
-               <nav>
-                    <ul  class="menu">
-                        <a href="/">ACCUEIL</a>
-                        <a href="/">RESTAURATIONS</a>
-                        <a href="/">CREATIONS</a>
-                        <a href="/">CONTACT</a>   
-                    </ul>       
-               </nav>
-    </header>
+<body>
+    
+    
