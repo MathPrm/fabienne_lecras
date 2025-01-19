@@ -955,10 +955,11 @@ body {
         font-size: 45px; 
     }
     .wp-container-core-columns-is-layout-1 .wp-block-column-is-layout-flow{
-        position:absolute;
-        top: 25%;
-        right: 30%; 
-        z-index:1; 
+        position: absolute;
+        right: 50%;
+        z-index: 1;
+        text-align: center;
+        transform: translate(50%, 50%);
     }
     .wp-container-core-columns-is-layout-1 .wp-block-column-is-layout-flow h1{
         font-size: 1em;
