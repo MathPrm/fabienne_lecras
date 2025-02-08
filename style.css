@@ -229,7 +229,7 @@ header {
         align-items: center;
         gap: 20px;
         padding-bottom: 20px;
-        z-index: 99;
+        z-index: 98;
     }
 
     .menu-burger-body.block {
