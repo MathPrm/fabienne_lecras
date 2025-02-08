@@ -50,7 +50,7 @@
                 <p>Possibilité de déplacement, contactez-moi pour plus d'informations.</p>
             </div>
         </div>
-        <?php the_content() ?>
+        <?php the_content(); ?>
     </div>
 
 <?php
