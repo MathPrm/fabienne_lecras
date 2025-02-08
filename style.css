@@ -123,6 +123,126 @@ header {
     text-decoration: underline;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        padding: 0 35px 0 35px;
+    }
+
+    #menu-navigation li a {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-navigation-container {
+        display: none;
+    }
+
+    header {
+        padding: 0 10px 0 10px;
+        position: relative;
+    }
+
+    #hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 40px;
+        width: 50px;
+    }
+
+    #hamburger span {
+        display: block;
+        height: 8px;
+        width: 50px;
+        background-color: var(--gold);
+        border-radius: 50px;
+    }
+
+    #cross {
+        display: block;
+        height: 40px;
+        width: 50px;
+        position: absolute;
+        right: 4px;
+        top: 10px;
+    }
+
+    #cross span {
+        height: 8px;
+        width: 50px;
+        background-color: var(--gold);
+        border-radius: 50px;
+        position: absolute;
+        bottom: 16px;
+    }
+
+    #cross-1 {
+        transform: rotate(45deg);
+    }
+
+    #cross-2 {
+        transform: scaleY(-1) rotate(45deg);
+    }
+
+    .menu-burger-body {
+        background-color: var(--black);
+        width: 200px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 20px;
+        z-index: 98;
+    }
+
+    .menu-burger-body.block {
+        display: flex;
+    }
+
+    .menu-burger-body.hide {
+        display: none;
+    }
+
+    .upper-menu-burger {
+        display: flex;
+        margin-top: 80px;
+        justify-content: space-around;
+        width:80%;
+    }
+
+    #menu-burger-menu {
+        list-style: none;
+        font-size: 1.1rem;
+    }
+
+    #menu-burger-menu li a {
+        color: var(--blanc);
+    }
+
+    #menu-burger-menu li {
+        margin-bottom: 10px;
+    }
+
+    .sub-menu {
+        margin-top: 10px;
+        list-style: disc;
+        color: white;
+    }
+
+    .sub-menu li {
+        margin-bottom: 10px;
+        margin-left: 24px;
+    }
+
+    .reseaux-burger-menu {
+        display: flex;
+        gap: 20px;
+    }
+}
+
 /*
     Footer
 */
