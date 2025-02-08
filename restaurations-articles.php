@@ -10,7 +10,7 @@ get_header();
 <main id="main" class="site-main">
     <div class="container">
         <?php
-        while (have_posts()) :
+        while (have_posts()):
             the_post();
         ?>
         <div class="restaurations-submenu">
