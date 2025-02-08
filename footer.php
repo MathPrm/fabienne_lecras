@@ -9,6 +9,6 @@
             <?php dynamic_sidebar( 'bas-droite' );?>
         </div>
     </footer>
-    <?php wp_footer() ?>
+    <?php wp_footer(); ?>
 </body>
 </html>
