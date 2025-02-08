@@ -14,6 +14,7 @@
     <title><?php echo wp_get_document_title(); ?></title>
     <?php wp_head() ?>
 </head>
+
 <body>
     <header>
         <?php the_custom_logo(); ?>

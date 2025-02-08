@@ -26,7 +26,6 @@ function fabienne_lecras_enqueue_styles() {
 }
 
 add_action('wp_enqueue_scripts', 'fabienne_lecras_enqueue_styles');
-
 add_action('wp_enqueue_scripts', 'montheme_register_assets');
 
 function montheme_supports () {

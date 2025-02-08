@@ -3,7 +3,6 @@
 Template Name: Article Template
 Template Post Type: post
 */
-
 get_header();
 ?>
 

@@ -11,6 +11,7 @@
         <div id="reseaux">
             <?php dynamic_sidebar( 'reseaux' );?>
         </div>
+        
     </footer>
     <?php wp_footer() ?>
 </body>
