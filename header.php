@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-        <?php the_custom_logo() ?>
+        <?php the_custom_logo(); ?>
         <h2 class="header-title-mobile">Fabienne Lecras Tanguy</h2>
         <div id="hamburger">
             <span></span>
