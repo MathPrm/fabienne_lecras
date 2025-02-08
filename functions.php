@@ -36,7 +36,6 @@ function montheme_supports () {
         'header' => 'En tête du menu',
         'footer_left' => 'Pied de page gauche',
         'footer_right' => 'Pied de page droite',
-        'burger_menu' => 'Menu burger'
     ));
     add_theme_support('custom-logo', array(
         'height' => 100,
@@ -80,11 +79,6 @@ function mon_theme_widget_zone(){
 		'name' => __('bas_droite', 'monTheme'),
 		'id' => 'bas-droite',
 		'description' => 'region en bas à droite pour insérer un widget'
-	]);
-	register_sidebar([
-		'name' => __('reseaux', 'monTheme'),
-		'id' => 'reseaux',
-		'description' => 'region pour insérer les réseaux widget'
 	]);
 }
 add_action('widgets_init', 'mon_theme_widget_zone');
