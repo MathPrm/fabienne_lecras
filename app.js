@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         menuBody.classList.remove('hide');
     });
 
-    cross.addEventListener('click', () => {
+    cross.addEventListener('click',() => {
         menuBody.classList.toggle('hide');
     });
 });
