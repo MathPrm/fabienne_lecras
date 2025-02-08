@@ -1,14 +1,17 @@
-"use strict";
+'use strict'
+
 document.addEventListener('DOMContentLoaded', () => {
-    //burger menu
-    let burger = document.getElementById('hamburger');
-    // const burgerLines = document.querySelector('#burger-lines');
-    // const burgerIcon = document.querySelector('#burger-icon');
-    let menu = document.querySelector('.menu-navigation-container');
-    
+    // menu hamburger
+    const burger = document.querySelector('#hamburger');
+    const menuBody = document.querySelector('.menu-burger-body');
+    const cross = document.querySelector('#cross');
+
     burger.addEventListener('click', () => {
-        menu.classList.toggle('active');
-        burger.classList.toggle('open');
-        // burgerIcon.classList.toggle('open');
+        menuBody.classList.add('block');
+        menuBody.classList.remove('hide');
+    });
+
+    cross.addEventListener('click', () => {
+        menuBody.classList.toggle('hide');
     });
 });

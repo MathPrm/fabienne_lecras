@@ -3,7 +3,7 @@
 
     get_header();
 ?>
-    <h1><?php the_title() ?></h1>
+    <h1 id="title-contact" class="wp-block-heading " ><span class="fancy-letter">C</span>ontact</h1>
 
     <div id="contact-container">
         <div id="contact-infos-container">
@@ -45,6 +45,9 @@
                 <?php if ($address) : ?>
                     <p class="contact-infos" id="address"><?php echo get_field('adresse'); ?></p>
                 <?php endif; ?>
+            </div>
+            <div class="contact-deplacement">
+                <p>Possibilité de déplacement, contactez-moi pour plus d'informations.</p>
             </div>
         </div>
         <?php the_content() ?>
