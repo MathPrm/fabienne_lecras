@@ -49,7 +49,7 @@ get_header();
                             <?php endif; ?>
                         </div>
                         <div id="contact-restaurations-button-container">
-                            <a href="http://localhost/wordpress/contact/">Contactez-moi</a>
+                            <a href=<?php get_template_directory_uri() . "/contact"?>>Contactez-moi</a>
                         </div>
                     </div>
                 </div>
