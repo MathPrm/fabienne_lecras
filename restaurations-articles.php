@@ -13,6 +13,7 @@ get_header();
         while (have_posts()) :
             the_post();
         ?>
+        <!-- submenu peintures ou dorures -->
         <div class="restaurations-submenu">
             <div class="restaurations-submenu-container">
                 <div class="restaurations-menu-logo-container-1">
