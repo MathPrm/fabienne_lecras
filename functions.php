@@ -36,7 +36,6 @@ function montheme_supports () {
         'header' => 'En tête du menu',
         'footer_left' => 'Pied de page gauche',
         'footer_right' => 'Pied de page droite',
-        'burger_menu' => 'Menu burger'
     ));
     add_theme_support('custom-logo', array(
         'height' => 100,

@@ -17,7 +17,6 @@
 <body>
     <header>
         <?php the_custom_logo(); ?>
-        <h2 class="header-title-mobile">Fabienne Lecras Tanguy</h2>
         <div id="hamburger">
             <span></span>
             <span></span>
@@ -44,5 +43,6 @@
         </div>
             <?php wp_nav_menu([
                 'theme_location' => 'header'
-            ]); ?> 
+            ]); ?>
+            <img src=<?php echo get_template_directory_uri() . "./img/drawing.png"?>>   
     </header>
