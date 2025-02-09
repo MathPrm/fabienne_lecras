@@ -21,7 +21,26 @@
             <span></span>
             <span></span>
             <span></span>
-</div>
+        </div>
+        <div class="menu-burger-body">
+            <div id="cross">
+                <span id="cross-1"></span>
+                <span id="cross-2"></span>
+            </div>
+            <div class="upper-menu-burger">
+                <img src=<?= get_template_directory_uri() . "/img/line-burger.webp" ?>>
+                <?php wp_nav_menu([
+                'theme_location' => 'burger_menu'
+                ]); ?>
+            </div>
+            <div>
+                <img src=<?= get_template_directory_uri() .  "/img/drawing.svg" ?>>
+            </div>
+            <div class="reseaux-burger-menu">
+                <a href="https://www.facebook.com/fabiennelecras/photos/?_rdr" target="blank"><img src= <?= get_template_directory_uri() . "/img/fb-icon.webp"?>></a>
+                <a href="https://www.instagram.com/artdorure/?igsh=OHFreGQwdHVtbDh0#" target="blank"><img src= <?= get_template_directory_uri() . "/img/ig_icon.webp"?>></a>
+            </div>
+        </div>
             <?php wp_nav_menu([
                 'theme_location' => 'header'
             ]); ?>
