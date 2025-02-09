@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap" rel="stylesheet">
     <title><?php echo wp_get_document_title(); ?></title>
-    <?php wp_head() ?>
+    <?php wp_head(); ?>
 </head>
 <body>
     <header>
