@@ -64,7 +64,7 @@ function montheme_title_separator() {
 }
 add_filter('document_title_separator', 'montheme_title_separator');
 
-function mon_theme_widget_zone(){
+function mon_theme_widget_zone() {
 	register_sidebar([
 		'name' => __('bas_gauche', 'monTheme'),
 		'id' => 'bas-gauche',
