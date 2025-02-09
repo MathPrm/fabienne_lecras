@@ -11,4 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
         burger.classList.toggle('open');
         // burgerIcon.classList.toggle('open');
     });
+
+    // cross to close menu burger
+    cross.addEventListener('click', () => {
+        menuBody.classList.toggle('hide');
+    });
 });
