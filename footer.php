@@ -1,12 +1,15 @@
     <footer>
-        <div>
-            <?php dynamic_sidebar( 'bas-gauche' );?>
+        <div id="menu-2">
+            <?php dynamic_sidebar( 'bas-gauche' ); ?>
         </div>
-        <div>
-            <?php dynamic_sidebar( 'bas-centre' );?>
+        <div id="footer-logo">
+            <?php dynamic_sidebar( 'bas-centre' ); ?>
         </div>
-        <div>
-            <?php dynamic_sidebar( 'bas-droite' );?>
+        <div id="menu-3">
+            <?php dynamic_sidebar( 'bas-droite' ); ?>
+        </div>
+        <div id="reseaux">
+            <?php dynamic_sidebar( 'reseaux' ); ?>
         </div>
     </footer>
     <?php wp_footer(); ?>
