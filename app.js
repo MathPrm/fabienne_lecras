@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         menuBody.classList.add('block');
         menuBody.classList.remove('hide');
     });
-
+    // cross to close menu burger
     cross.addEventListener('click', () => {
         menuBody.classList.toggle('hide');
     });
