@@ -22,7 +22,7 @@ function fabienne_lecras_enqueue_custom_script() {
 add_action('wp_enqueue_scripts', 'fabienne_lecras_enqueue_custom_script');
 
 function fabienne_lecras_enqueue_styles() {
-    wp_enqueue_style('fabienne_lecras-style',get_stylesheet_uri());
+    wp_enqueue_style('style', get_stylesheet_uri());
 }
 
 add_action('wp_enqueue_scripts', 'fabienne_lecras_enqueue_styles');
