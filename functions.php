@@ -65,22 +65,26 @@ function montheme_title_separator() {
 }
 add_filter('document_title_separator', 'montheme_title_separator');
 
-function mon_theme_widget_zone() {
+function mon_theme_widget_zone(){
+    //widget en bas à gauche
 	register_sidebar([
 		'name' => __('bas_gauche', 'monTheme'),
 		'id' => 'bas-gauche',
 		'description' => 'region en bas à gauche pour insérer un widget'
 	]);
+    //widget en bas au centre
 	register_sidebar([
 		'name' => __('bas_centre', 'monTheme'),
 		'id' => 'bas-centre',
 		'description' => 'region en bas au centre pour insérer un widget'
 	]);
+    //widget en bas à droite
 	register_sidebar([
 		'name' => __('bas_droite', 'monTheme'),
 		'id' => 'bas-droite',
 		'description' => 'region en bas à droite pour insérer un widget'
 	]);
+    //widget tout en bas
 	register_sidebar([
 		'name' => __('reseaux', 'monTheme'),
 		'id' => 'reseaux',
